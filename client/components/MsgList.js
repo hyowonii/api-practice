@@ -14,15 +14,6 @@ const originalMsgs = Array(50)
     text: `${i + 1} mock text`
   })).reverse();
 
-/*[
-    {
-        id: 1,
-        userId: getRandomUserId(),
-        timestamp: 1234567890123,
-        text: '1 mok text'
-    }
-]*/
-
 const MsgList = () => {
   const [msgs, setMsgs] = useState(originalMsgs);
   const [editingId, setEditingId] = useState(null);
